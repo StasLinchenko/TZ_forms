@@ -19,3 +19,4 @@ use App\Http\Controllers\FormController;
 Route::get('/',[FormController::class,'index'])->name('forms.index');
 Route::get('form/create',[FormController::class,'create'])->name('forms.create');
 Route::post('/',[FormController::class,'store'])->name('forms.store');
+
