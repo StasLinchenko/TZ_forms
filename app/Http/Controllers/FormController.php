@@ -22,8 +22,8 @@ class FormController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'firstName' => 'required|max:20|regex:[a-zA-Z]',
-            'surname' => 'required|max:40|regex:[a-zA-Z]',
+            'firstName' => 'required|max:20|regex:/[a-zA-Z]+/',
+            'surname' => 'required|max:40|regex:/[a-zA-Z]+/',
             'email' => 'required|email',
             'desc' => 'required|max:255'
         ];
